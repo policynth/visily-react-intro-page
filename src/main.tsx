@@ -7,3 +7,8 @@ createRoot(document.getElementById("root")!).render(
     <App />
   </StrictMode>
 );
+
+// ⭐ Register service worker (PWA)
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/service-worker.js");
+}
