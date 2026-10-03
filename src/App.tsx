@@ -40,6 +40,7 @@ export default function App() {
           {/* Hero Card */}
           <section className="px-5 lg:px-0">
             <div className="bg-[#F5F7F9] rounded-2xl border border-[#B4B6B9] shadow-sm overflow-hidden flex flex-col">
+              
               {/* Image Container */}
               <div className="relative aspect-[348/261] bg-[#EBECED]/40">
                 <img 
@@ -47,11 +48,13 @@ export default function App() {
                   alt="Hero Illustration" 
                   className="w-full h-full object-cover"
                 />
-                {/* Badges on Image */}
+
+                {/* Badges */}
                 <div className="absolute top-2.5 left-2.5 flex items-center gap-1.5 px-2 py-1 bg-[#F6F7F7]/90 border border-[#B4B6B9]/80 rounded-md">
                   <img src="./assets/IMG_5.svg" alt="layers" className="w-3 h-3" />
                   <span className="text-[#1E1F21] font-mono text-[10px] font-medium">3-Stream Model</span>
                 </div>
+
                 <div className="absolute bottom-2.5 right-2.5 flex items-center gap-1.5 px-2 py-1 bg-[#F6F7F7]/90 border border-[#B4B6B9]/80 rounded-md">
                   <img src="./assets/IMG_6.svg" alt="shield" className="w-3 h-3" />
                   <span className="text-[#1E1F21] font-mono text-[10px] font-medium">Non-Partisan</span>
@@ -82,6 +85,7 @@ export default function App() {
 
             {/* Stream Grid */}
             <div className="grid grid-cols-3 gap-3 mb-4">
+              
               {/* Problems Card */}
               <div className="bg-[#F5F7F9] p-2.5 rounded-xl border border-[#1C1F25] shadow-sm flex flex-col justify-between h-[77px]">
                 <div className="flex justify-between items-start">
@@ -150,7 +154,7 @@ export default function App() {
           </section>
         </main>
 
-        {/* Right Column / Actions - Desktop Sidebar / Mobile Bottom Bar */}
+        {/* Right Column / Actions */}
         <aside className="w-full lg:w-[380px] bg-[#F6F7F7] border-t border-[#B4B6B9] lg:border-t-0 lg:border-l lg:pl-8 lg:pt-12">
           <div className="px-5 py-4 flex flex-col gap-3 lg:px-0 lg:sticky lg:top-8">
             
@@ -172,6 +176,28 @@ export default function App() {
                 <img src="./assets/IMG_14.svg" alt="chevron" className="w-3.5 h-3.5" />
               </button>
             </div>
+
+            {/* ⭐ YOUR THREE BUTTONS */}
+            <button
+              onClick={() => alert("good job!")}
+              className="w-full h-10 bg-[#1C1F25] text-white rounded-md"
+            >
+              Problems
+            </button>
+
+            <button
+              onClick={() => alert("good job!")}
+              className="w-full h-10 bg-[#1C1F25] text-white rounded-md"
+            >
+              Politics
+            </button>
+
+            <button
+              onClick={() => alert("good job!")}
+              className="w-full h-10 bg-[#1C1F25] text-white rounded-md"
+            >
+              Policy
+            </button>
 
             {/* Terms Text */}
             <p className="text-[#6B6C6F] font-mono text-[10px] text-center leading-tight mt-2 px-4">
